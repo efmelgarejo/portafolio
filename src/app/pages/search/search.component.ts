@@ -14,7 +14,7 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe( params => {
-      console.log(params['termino'])
+      //console.log(params['termino'])
       this.productoService.buscarProducto( params['termino'] )
     })
   }
